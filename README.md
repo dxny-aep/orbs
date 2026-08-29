@@ -1,5 +1,18 @@
 # Libraries
 
+> **Fork.** Upstream is [Jakubantalik/Libraries](https://github.com/Jakubantalik/Libraries)
+> (MIT), tracked here as the `upstream` remote. This copy exists as a working base for
+> the orbs port used in [trufflelab](https://github.com/dxny-aep/trufflelab) — see
+> [trufflelab.vercel.app/orbs](https://trufflelab.vercel.app/orbs).
+>
+> **What diverges from upstream:** `sites/orbs` gains a light/dark theme toggle —
+> `hooks/useTheme.ts` follows the OS, persists an explicit choice, and keeps tracking
+> until the visitor makes one; `components/Header.tsx` ships the toggle its props were
+> already scaffolded for and makes the header image respect Vite's `base`. Everything
+> else is upstream.
+>
+> Pull upstream changes with `git fetch upstream && git rebase upstream/main`.
+
 React libraries by [Jakub Antalik](https://github.com/Jakubantalik), and the sites that demo them.
 
 | Package | npm | Demo |
